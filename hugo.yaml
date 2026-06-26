@@ -1,0 +1,96 @@
+baseURL: "https://type.kkn.moe/"
+title: "MacroType"              # 网站标题
+theme: "PaperMod"                # 确保这里填写了主题名字
+
+# 语言设置
+languageCode: "zh-cn"
+defaultContentLanguage: "zh"
+
+# 开启一些 Hugo 的内置功能
+enableInlineShortcodes: true
+enableRobotsTXT: true
+
+# 顶部导航菜单配置
+menu:
+  main:
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 10
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 20
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 30
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 40
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 50
+    - identifier: contact
+      name: 联系
+      url: /contact/
+      weight: 60
+
+# PaperMod 主题专属配置
+params:
+  env: production
+  author: "𮭟 & Khej-Trhyk"
+  description: "介绍字和关于字的一切，包括字体排印技术、字符编码、音韵、与设计理念"
+  
+  # 主题外观
+  defaultTheme: auto         # 可选：auto（跟随系统）, light, dark
+  disableThemeToggle: false   # 是否隐藏右上角的深色/浅色切换按钮
+
+  # 页面元素开关
+  ShowReadingTime: true      # 显示文章阅读时间
+  ShowShareButtons: true     # 显示文章分享按钮
+  ShowPostNavLinks: true     # 显示上一篇/下一篇链接
+  ShowBreadCrumbs: true      # 显示面包屑导航
+  ShowCodeCopyButtons: true  # 代码块显示“复制”按钮
+  ShowToc: true       # 全局开启目录
+  TocOpen: true       # 全局默认展开目录
+  DateFormat: "2006-01-02"
+
+  # 首页模式设置：如果开启（true），首页将显示你的头像和简介；如果关闭（false），首页默认显示文章列表
+  profileMode:
+    enabled: false
+  
+  homeInfoParams:
+    Title: "欢迎来到MacroType"
+    Content: >
+      这里有字和关于字的一切，包括[字体排印技术](/categories/字体排印/)、[字符编码](/categories/字符编码/)、[音韵](/categories/音韵/)与[设计理念](/categories/设计理念/)，[了解更多>>](/about/)
+      
+
+      可以到这里[联系我们](/contact/)
+
+  # 底部社交图标
+  socialIcons:
+      - name: X
+        url: "https://x.com/omicron65535"
+      - name: github
+        url: "https://github.com/308K/macrotype"
+  #   - name: email
+  #     url: "mailto:你的邮箱@example.com"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+copyright: "MacroType &#127279; All Wrongs Reserved. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) [泛用设计(通称无障碍或辅助功能)](/d4e)"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+pagination:
+  pagerSize: 10

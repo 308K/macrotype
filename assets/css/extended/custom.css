@@ -1,0 +1,102 @@
+/* 为文章主体内容启用中英文自动间距和行末标点符号悬挂 */
+body {
+    text-autospace: normal;
+    hanging-punctuation: allow-end;
+}
+
+:root {
+    --primary:   #000000 !important;
+    --secondary: #666666 !important;
+    --tertiary:  #505050 !important;
+}
+
+.dark,
+[data-theme="dark"] {
+    --primary:   #ffffff !important;
+    --secondary: #c0c0c0 !important;
+    --tertiary:  #d4d4d4 !important;
+}
+
+/* 修复 tags 和 categories 页面的大分类按钮 */
+.terms-tags li a,
+/* 修复文章底部的标签小按钮 */
+.post-tags a {
+    background-color: rgba(0, 0, 0, 0.08) !important;
+    /* 亮色模式下的正常背景 */
+    color: var(--primary) !important;
+}
+
+/* 适配暗色模式的按钮修复 */
+.dark .terms-tags li a,
+.dark .post-tags a,
+[data-theme="dark"] .terms-tags li a,
+[data-theme="dark"] .post-tags a {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: var(--primary) !important;
+}
+
+/* 仅在屏幕宽度大于 1200px (电脑端大屏) 时生效，避免影响手机端排版 */
+@media screen and (min-width: 1200px) {
+    .toc {
+        position: fixed;
+        /* 固定在屏幕上 */
+        right: 5%;
+        /* 距离屏幕右侧的距离，可以根据你的屏幕自行调整 */
+        top: 100px;
+        /* 距离屏幕顶部的距离 */
+        width: 280px;
+        /* 目录的宽度 */
+        max-height: 80vh;
+        /* 最大高度，防止目录太长超出屏幕 */
+        overflow-y: auto;
+        /* 目录太长时自动显示内部滚动条 */
+        z-index: 99;
+        /* 确保目录层级在最上面，不被遮挡 */
+        background: var(--theme);
+        /* 适配深色/浅色模式背景 */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        /* 加一点微弱的阴影让它更立体 */
+    }
+}
+
+/* 缩写样式 */
+abbr[title] {
+    text-decoration: underline dotted;
+    text-decoration-color: var(--primary);
+    /* 借用 PaperMod 默认的主题强调色 */
+    cursor: help;
+    /* 鼠标悬停变成问号光标 */
+    /* font-weight: 600; */
+}
+
+/* Visual Presentation (Level AAA) */
+/* 1. 设置正文行距 */
+.post-content.post-content {
+    line-height: 1.6;
+}
+
+/* 2. 段落间距：必须是行距的 1.5 倍 (1.5 * 1.5 = 2.25em) */
+.post-content.post-content p {
+    margin-bottom: 2.4em;
+}
+
+/* 3. 引用块：保持与段落相同的底部间距 */
+.post-content.post-content blockquote {
+    margin-bottom: 2.4em;
+}
+
+/* 4. 列表容器：保持与段落相同的底部间距，防止列表与后续段落黏连 */
+.post-content.post-content ul,
+.post-content.post-content ol {
+    margin-bottom: 2.4em;
+}
+
+/* 5. 列表项内部：恢复紧凑间距，因为列表项不是独立段落，不适用 1.5 倍规则 */
+.post-content.post-content li {
+    margin-bottom: 0.5em;
+}
+
+/* 6. 兜底优化：清除内容块最后一个元素的底部留白，防止整体排版底部塌陷 */
+.post-content.post-content *:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,10 @@
+<div class="custom-html-preview">
+    <div class="preview-area"
+        style="border: 1px solid #e0e0e0; padding: 15px; border-radius: 8px; margin-bottom: 10px; background: #fff;">
+        {{ .Inner | safeHTML }}
+    </div>
+
+    <div class="code-area">
+        {{ highlight .Inner "html" "" }}
+    </div>
+</div>
