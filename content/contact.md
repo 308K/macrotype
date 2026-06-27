@@ -5,7 +5,7 @@ hideMeta: true
 disableShare: true
 ---
 
-我们一般不看SNS信息，如有必要，您可以通过[contact@kkn.moe](mailto:contact@kkn.moe)来联系我们，我们会尽力在72小时内回复。请注意，回复邮件将由形如`<UUID>@send.kkn.moe`的地址代发。
+我们一般不看SNS消息，如有必要，可以通过[contact@kkn.moe](mailto:contact@kkn.moe)来联系我们，我们会尽力在72小时内回复。请注意，回复邮件将由形如`<UUID>@send.kkn.moe`的地址代发。
 
 如需OpenPGP端到端加密，请往下看。
 

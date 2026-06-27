@@ -1,6 +1,7 @@
-/* 为文章主体内容启用中英文自动间距和行末标点符号悬挂 */
+/* 启用中西间距、CJK标点符号挤压和行末标点符号悬挂 */
 body {
     text-autospace: normal;
+    text-spacing-trim: normal;
     hanging-punctuation: allow-end;
 }
 
