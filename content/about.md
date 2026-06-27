@@ -15,7 +15,7 @@ MacroType介绍字和关于字的一切。
 
 ### 𮭟
 
-有时用「Khej-Trhyk」这个名字，因为有些平台用`utf8mb3`存名字而迫不得已编了后者。这两个名字都是随机抽来的，分别是一个Unicode汉字和一组[切韵拼音](https://phesoca.com/tupa/)，只保证独特性不保证有意义。本站的所有署名均为「𮭟 & Khej-Trhyk」并使用代词「我们」仅为方便或口癖，不代表真的有两个人。
+有时用「Khej-Trhyk」这个名字，因为有些平台用`utf8mb3`存名字而迫不得已编了后者。这两个名字都是随机抽来的，分别是一个Unicode汉字和一组[切韵拼音](https://phesoca.com/tupa/)，只保证独特性不保证有意义。对了，在啤酒烧烤国服或日服都概率在高手房野车（随机匹配的多人演出）见到「ꡁꡦꡞꡅꡞ」这个名字（游戏中看到的是五个豆腐块），其实这也是我，我来坐世嘉大牢了（见下文）。本站的所有署名均为「𮭟 & Khej-Trhyk」并使用代词「我们」仅为方便或口癖，不代表真的有两个人。
 
 𮭟是本站的唯一开发者和维护者，早年间在其他平台写过不少关于字符编码和字体排印的细节性问题，今天想重新开始。自认为受[UntPhesoca](https://www.zhihu.com/people/UntW)、[王赟 Maigo](https://www.zhihu.com/people/maigo)、[Sim-CH](https://www.zhihu.com/people/sim-ch)和[深州蜜桃](https://www.zhihu.com/people/chi-yang-bei-yong-ji-vol-2)的影响比较大，想成为和这几位一样的人。
 
