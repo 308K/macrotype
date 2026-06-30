@@ -76,6 +76,8 @@ params:
         url: "https://x.com/omicron65535"
       - name: github
         url: "https://github.com/308K/macrotype"
+      - name: bluesky
+        url: "https://bsky.app/profile/trhyk.bsky.social"
   #   - name: email
   #     url: "mailto:你的邮箱@example.com"
 
@@ -89,6 +91,8 @@ copyright: "MacroType &#127279; All Wrongs Reserved. [CC BY 4.0](https://creat
 
 markup:
   goldmark:
+    extensions:
+      typographer: true
     renderer:
       unsafe: true
 
